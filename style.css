@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clear::after,
+.clear::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    float: left;
+}
+
+.nav {
+    float: right;
+    margin-top: 30px;
+}
+
+.nav>ul {}
+
+.nav>ul>li {
+    float: left;
+    width: 160px;
+}
+
+.nav>ul>li>a {
+    display: block;
+    height: 40px;
+    background: #e66b27;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav>ul>li:hover>a {
+    background-color: #0076be;
+}
+
+.sub {
+    width: 100%;
+    height: 160px;
+    background-color: #e66b27;
+    display: none;
+}
+
+.sub>li {}
+
+.sub>li>a {
+    width: 100%;
+    display: block;
+    background-color: #e66b27;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.sub>li>a:hover {
+    background: #0076be;
+}
+
+#slid_img {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slid_img>ul {
+    width: 3600px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slid_img>ul>li {
+    float: left;
+    width: 1200px;
+    height: 300px;
+
+}
+
+#slid_img ul li img {
+    width: 1200px;
+    height: 300px;
+}
+
+#contents {
+    height: 200px;
+}
+
+#contents>div {
+    width: 390px;
+    height: 200px;
+    margin-right: 15px;
+    float: left;
+}
+
+.title {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+}
+
+.tab .title {}
+
+.tab .title.on {
+    background: #e66b27;
+}
+
+.tab {
+    position: relative;
+}
+
+
+.tab .notice {}
+
+.tab .notice ul {
+    height: 165px;
+    position: absolute;
+    top: 35px;
+    /* border: 1px solid ; */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.tab .notice ul li {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/* .tab .notice ul li:nth-child(1){
+    background-color: #ddd;
+} */
+
+.tab .notice ul li a {
+    display: block;
+    width: 80%;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.tab .notice ul li a:hover{
+    text-decoration: underline;
+}
+
+.tab .notice ul li span {
+    float: right;
+}
+
+.tab .gallery {}
+
+.tab .gallery ul {
+    height: 165px;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    margin: 0 30px;
+    display: none;
+}
+
+.tab .gallery ul li {
+    width: 30%;
+    display: inline-block;
+    padding-top: 35px;
+    margin: 2px;
+}
+
+.tab .gallery ul li:hover img{
+    opacity: 0.7;
+}
+
+.tab .gallery ul li a {}
+
+.banner {}
+
+.baro {
+    margin-right: 0 !important;
+    float: right;
+}
+
+#footer{
+    width: 1200px;
+    height: 100px;
+    /* background-color: #333; */
+}
+.f_logo{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.f_right{}
+
+.f_top{}
+.f_top > ul{
+    width: 1000px;
+    height: 100px;
+}
+.f_top > ul > li{
+    float: right;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 0 0 0 65px;
+}
+
+.copy{
+    width: 1000px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    margin-top: -50px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.pop{}
+.pop div{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    border: 10px solid #e66b27;
+    text-align: center;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.pop div span{
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 225px;
+}
+.pop div p{
+    position: absolute;
+    top: 100px;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 30px;
+}
